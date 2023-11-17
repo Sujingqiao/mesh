@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2022 The Mesh TensorFlow Authors.
+# Copyright 2023 The Mesh TensorFlow Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,9 +27,9 @@ from tensorflow.compat.v1 import estimator as tf_estimator
 from tensorflow.python.data.ops.dataset_ops import Dataset
 from tensorflow.python.platform import flags
 from tensorflow.python.platform import tf_logging as logging
-from tensorflow.python.tpu import tpu_config  # pylint: disable=g-direct-tensorflow-import
-from tensorflow.python.tpu import tpu_estimator  # pylint: disable=g-direct-tensorflow-import
 from tensorflow_estimator.python.estimator import estimator as estimator_lib
+from tensorflow_estimator.python.estimator.tpu import tpu_config  # pylint: disable=g-deprecated-tf-checker
+from tensorflow_estimator.python.estimator.tpu import tpu_estimator  # pylint: disable=g-deprecated-tf-checker
 
 FLAGS = flags.FLAGS
 

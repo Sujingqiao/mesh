@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright 2022 The Mesh TensorFlow Authors.
+# Copyright 2023 The Mesh TensorFlow Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -48,8 +48,8 @@ import tensorflow_datasets as tfds
 
 from tensorflow.core.protobuf import rewriter_config_pb2  # pylint: disable=g-direct-tensorflow-import
 from tensorflow.python.ops import resources  # pylint: disable=g-direct-tensorflow-import
-from tensorflow.python.tpu import tpu_config  # pylint: disable=g-direct-tensorflow-import
-from tensorflow.python.tpu import tpu_estimator  # pylint: disable=g-direct-tensorflow-import
+from tensorflow_estimator.python.estimator.tpu import tpu_config  # pylint: disable=g-deprecated-tf-checker
+from tensorflow_estimator.python.estimator.tpu import tpu_estimator  # pylint: disable=g-deprecated-tf-checker
 
 try:
   tf.flags.DEFINE_multi_string("gin_file", None, "Path to a Gin file.")
